@@ -38,6 +38,7 @@ const pokemons = [
 // 1. Get a reference to the list already on the page
 // Recommend using querySelector to get the list
 
+let list = document.querySelector('ul');
 
 // 2. Loop through the array of pokemons items
 // For each item:
