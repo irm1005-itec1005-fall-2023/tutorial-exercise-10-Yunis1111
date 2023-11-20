@@ -26,11 +26,11 @@
 // 1. Array of pokemons that are provided by the user
 const pokemons = [];
 // 2. The ul for the list of pokemon
-
+ const pokeList = document.querySelector('.poke-items');
 // 3. The form where we intake pokemon
-
+const pokeForm = document.querySelector('.poke-form');
 // 4. The form text element that has the name the user provided
-
+const pokeFormText = document.querySelector('.poke-form-text');
 
 //
 // FUNCTIONS
