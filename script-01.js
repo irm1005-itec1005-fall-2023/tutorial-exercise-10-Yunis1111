@@ -93,3 +93,4 @@ for (let i = 0; i < pokemons.length; i++) {
 // eg: { type: 'Normal', count: 3 }
 
 // Display the results
+
