@@ -45,18 +45,20 @@ event.preventDefault();
   // Add the user defined pokemon to our array
  pokemons.push(pokename);
   // Draw the list of pokemons
-  renderList (pokemons, pokeList);
+  renderList();
+  console.log(pokemons);
   // Reset the form so that the text field name is cleared
   pokeForm.reset();
 }
 
 // 6. Draw the list of items
 // Step 1: remove all of the children in the UL list
-
 // Step 2: for each entry in the array add the array item to the list
 function renderList() {
+  console.log("renderList");
   // Clear all of the entries in the list
-
+  //pokelist removeChild(pokeitems);
+  pokeList.innerhtml = '';
   // For each item in the list add a list item
 
 
