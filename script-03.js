@@ -54,14 +54,25 @@ event.preventDefault();
 // 6. Draw the list of items
 // Step 1: remove all of the children in the UL list
 // Step 2: for each entry in the array add the array item to the list
-function renderList() {
-  console.log("renderList");
+function renderList(items, itemsList) {
+
   // Clear all of the entries in the list
-  //pokelist removeChild(pokeitems);
-  pokeList.innerhtml = '';
+   while (pokeList.firstChild) {
+     pokeList.removeChild(pokeList.firstChild);
+   }
   // For each item in the list add a list item
 
-
+    for (let i = 0; i < pokemons.length; i++) {
+      // Create the list item and add the text
+      const listItem = document.createElement('li');
+      listItem.innerText = pokemons[i];
+      // On the last item in the list, add the annimation class
+      if (i === pokemons.length - 1) {
+        listItem.classList.add('new-item-annimate');
+      }
+      // Add the list item to the list
+      pokeList.appendChild(listItem);
+    }
 }
 
 //
